@@ -192,7 +192,7 @@
                 document.querySelectorAll('.letter').forEach((l, i) => {
                     l.style.opacity = "1";
                     l.style.transform = "translateZ(0px) scale(1)";
-                    l.style.transitionDelay = ${i * 0.1}s;
+                    l.style.transitionDelay = `${i * 0.1}s`;
                 });
             } else {
                 if(hasShaken) { clearInterval(starsInterval); starsInterval = null; hasShaken = false; }
@@ -238,4 +238,5 @@
         update();
     </script>
 </body>
+
 </html>
