@@ -182,7 +182,7 @@
                 const currentZ = p.z + scrollY;
                 let opacity = 1;
                 if (currentZ > -100) opacity = Math.max(0, 1 - (currentZ + 100) / 500);
-                if (currentZ < -5000) opacity = 0;
+                if (currentZ < -3000) opacity = 0;
                 p.element.style.opacity = opacity;
                 p.element.style.transform = `translate3d(${p.x}px, ${p.y}px, ${currentZ}px) rotate(${currentZ/25}deg)`;
             });
@@ -240,3 +240,4 @@
 </body>
 
 </html>
+
